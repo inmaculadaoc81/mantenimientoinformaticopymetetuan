@@ -82,3 +82,18 @@ PERSONALIZACIÓN CON LA MARCA REAL (a petición del cliente — deja de ser plan
   el dominio ya corregido.
 - No se ha añadido Google Analytics: sigue sin proporcionarse un ID
   propio para PymeTech.
+
+AJUSTES DE HERO (a petición del cliente, con captura de pantalla):
+- H1 reducido de 20 palabras a 7: "Menos problemas técnicos. Más
+  tiempo para tu empresa."
+- Quitado el párrafo largo bajo el H1 (.hero-copy, "Equipos que no
+  responden, procesos manuales...") y la fila de píldoras (.points,
+  "Mantenimiento informático · Desarrollo de software ·
+  Automatizaciones · Soporte empresas") — ambos marcados para
+  eliminar en la captura.
+- Botones del hero (.ctas): cambiados de dos columnas a una sola
+  columna (uno debajo del otro), y añadido un icono a cada uno:
+  WhatsApp (bocadillo estándar de la familia), teléfono y un icono de
+  calendario para "Agenda una reunión".
+- Icono de WhatsApp flotante mejorado: sustituido el texto "WA" por
+  el mismo icono SVG de bocadillo usado en el resto de la familia.
