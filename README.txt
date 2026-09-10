@@ -69,3 +69,16 @@ CORRECCIÓN DE DOMINIO (confirmado por el cliente):
   genérica y personalizarla para ese negocio concreto — pendiente de
   confirmación del cliente antes de tocar el texto "Nombre de empresa" y
   el mensaje de WhatsApp.
+
+PERSONALIZACIÓN CON LA MARCA REAL (a petición del cliente — deja de ser plantilla genérica):
+- "Nombre de empresa" → "PymeTech" en cabecera, pie de página y
+  JSON-LD (campo "name").
+- Mensaje de WhatsApp: "¡Hola Kelatos" → "¡Hola PymeTech" en el CTA
+  del hero y en el botón flotante.
+- Title y meta description reescritos incluyendo la marca: "PymeTech
+  | Mantenimiento Informático y Software para Empresas en Madrid".
+- Añadidos meta robots y etiquetas og:title/og:description/og:url/
+  og:type (no existía ninguna); usan el título/descripción nuevos y
+  el dominio ya corregido.
+- No se ha añadido Google Analytics: sigue sin proporcionarse un ID
+  propio para PymeTech.
