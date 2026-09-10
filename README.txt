@@ -52,3 +52,20 @@ la familia (InformaticoChamberi). Si esta plantilla llega a
 desplegarse en vivo para un cliente real, hay que asignarle su propio
 dominio distinto antes de publicarla, y actualizar canonical/og:url/
 sitemap.xml/robots.txt en consecuencia.
+
+CORRECCIÓN DE DOMINIO (confirmado por el cliente):
+- BUG REAL — el dominio real es mantenimientoinformaticopymetetuan.es
+  (confirmado por el cliente). El anterior, serviciotecnicoinformaticomadrid.com.es,
+  resultó pertenecer en realidad a InformaticoChamberi, otro repositorio de
+  la familia. Corregido en canonical, JSON-LD (campo "url"), sitemap.xml y
+  robots.txt.
+- Verificado en vivo: mantenimientoinformaticopymetetuan.es actualmente
+  sirve un sitio WordPress ajeno a este despliegue de Vercel (cabeceras
+  PHP/wp-json/wp-content), con el título "PymeTech | Mantenimiento
+  Informático Tetuán" — probablemente el sitio antiguo que hay que
+  sustituir en el panel de dominios por este despliegue; eso no se puede
+  hacer desde el código. De paso revela el nombre de marca real
+  ("PymeTech") por si se decide dejar de usar esta copia como plantilla
+  genérica y personalizarla para ese negocio concreto — pendiente de
+  confirmación del cliente antes de tocar el texto "Nombre de empresa" y
+  el mensaje de WhatsApp.
