@@ -97,3 +97,18 @@ AJUSTES DE HERO (a petición del cliente, con captura de pantalla):
   calendario para "Agenda una reunión".
 - Icono de WhatsApp flotante mejorado: sustituido el texto "WA" por
   el mismo icono SVG de bocadillo usado en el resto de la familia.
+
+AJUSTES DE LA CAJA DE INFORMACIÓN Y H1 (a petición del cliente, con captura de pantalla):
+- Quitadas de la caja de información: la fila "Dirección" (C.
+  Joaquín María López, 26 — dirección compartida de la familia, no
+  específica de este negocio), la fila "Ámbito" y el bloque
+  "Referencia" (Metro/Aparcamiento) — las tres marcadas para eliminar
+  en la captura.
+- Añadida en su lugar una fila "Zona": Tetuán, Madrid (según el
+  propio dominio/nombre del repositorio, mantenimientoinformaticopymetetuan.es).
+- JSON-LD actualizado en consecuencia: quitado el streetAddress/
+  postalCode de la dirección compartida; areaServed cambiado de "ES"
+  a "Tetuán, Madrid".
+- H1 aumentado un 40%: clamp(40-58px) → clamp(56-81px) en escritorio.
+  El tamaño en móvil se mantiene en 48px, el estándar unificado de
+  toda la familia (no se ha tocado, para no romper esa consistencia).
