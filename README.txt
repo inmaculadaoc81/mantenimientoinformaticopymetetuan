@@ -112,3 +112,15 @@ AJUSTES DE LA CAJA DE INFORMACIÓN Y H1 (a petición del cliente, con captura de
 - H1 aumentado un 40%: clamp(40-58px) → clamp(56-81px) en escritorio.
   El tamaño en móvil se mantiene en 48px, el estándar unificado de
   toda la familia (no se ha tocado, para no romper esa consistencia).
+
+BANNER DE COOKIES Y ENLACE DE PRIVACIDAD (a petición del cliente):
+- BUG REAL — no existía ningún banner de cookies en todo el
+  repositorio. Añadido el estándar de la familia (Aceptar / Rechazar
+  / Política de privacidad → https://kelatos.com/privacy-policy/),
+  con recuerdo en localStorage y diseño apilado a ancho completo en
+  móvil.
+- BUG REAL — la casilla "Acepto la política de privacidad." del
+  formulario de contacto era texto plano, sin ningún enlace. Añadido
+  el enlace estándar de la familia a
+  https://kelatos.com/privacy-policy/, resaltado en azul y subrayado
+  (clase .privacy-link).
