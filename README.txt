@@ -175,3 +175,25 @@ REVISIÓN DE DISEÑO (a petición del cliente, "algo más profesional"):
 - Refinados espaciados, radios de borde y sombras para que se sientan
   consistentes en toda la página, en vez de varían de una sección a
   otra.
+
+IMAGEN DE FONDO DEL HERO (a petición del cliente, con imagen de referencia):
+- Añadida assets/images/pymetech-fondo-isometrico-web.webp (subida
+  por el cliente vía GitHub) como fondo decorativo del hero.
+- Escritorio (>920px): la ilustración se posiciona a la derecha del
+  hero, con background-size:contain (sin deformarla, respeta el
+  aspect-ratio real 1850x850) y un degradado en los bordes
+  (mask-image) para que se funda con el fondo oscuro en vez de
+  cortarse en seco. Tiene una animación de flotación muy sutil
+  (translateY ±12px, 7s, ease-in-out) usando solo transform (GPU,
+  sin repintar), respetando prefers-reduced-motion (ya definido
+  globalmente en el sitio). Se posiciona por debajo del texto y de la
+  caja de información (z-index) para no interferir con la legibilidad.
+- Móvil/tablet (≤920px): NO se muestra la ilustración completa (sería
+  pesada visualmente y competiría con el texto en pantallas
+  pequeñas). En su lugar, la misma imagen se usa como una textura de
+  fondo muy sutil a pantalla completa (opacity:.14, sin animación),
+  igual que pidió el cliente ("solo iría un patrón basado en la
+  imagen de fondo").
+- Rendimiento: una sola imagen de 47.7 KB, sin JavaScript añadido,
+  animación limitada a transform (compositada por GPU, no afecta al
+  layout/paint), desactivada por completo en móvil.
