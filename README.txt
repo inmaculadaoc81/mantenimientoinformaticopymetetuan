@@ -310,3 +310,13 @@ AJUSTES ADICIONALES (a petición del cliente):
   azul y cian) y con máscara para desvanecerse hacia el texto,
   manteniendo la instrucción de no saturar. Ajustado también el tamaño
   y posición de las formas en móvil.
+
+BORDE INFERIOR DEL HERO (a petición del cliente: "la parte de abajo del
+hero está recto, redondea o crea otra forma de terminar"):
+- Añadido un divisor curvo (.hero-edge, SVG de onda a ancho completo)
+  al final de la sección hero, en vez del corte recto anterior. El
+  relleno del SVG usa el mismo color de fondo (#f6f8fb) que la sección
+  siguiente ("problemas"), así que visualmente crea una transición
+  curva de la zona oscura del hero a la zona clara, sin afectar el
+  layout del contenido (absolute, no ocupa espacio en el flujo). Altura
+  reducida en móvil (≤600px) para mantener la proporción.
