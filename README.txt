@@ -230,3 +230,28 @@ mal encajada, no coloques ningún efecto, solo colócala en el fondo"):
 - Añadido position:relative;z-index:1 explícito a .info, como refuerzo,
   para que la tarjeta blanca siempre pinte por encima del fondo sin
   ambigüedad de apilamiento (antes .info no tenía position propio).
+
+CORRECCIÓN DEL FONDO DEL HERO (3ª vuelta, a petición del cliente — la
+versión de fondo a pantalla completa quedó demasiado tenue y ya no se
+parecía a la imagen de referencia):
+- Revertido el fondo a pantalla completa con opacidad .16 (quedaba
+  prácticamente invisible en escritorio). Restaurada una ilustración
+  visible y bien proporcionada (opacity:.95, background-size:contain,
+  aspect-ratio real 1850/850), posicionada dentro de .hero-grid (no de
+  .hero), en el hueco entre el texto y la tarjeta de contacto — igual
+  que en la imagen de referencia del cliente.
+- Sigue sin ningún efecto ni animación (sin hover, sin transition),
+  conforme a la última indicación.
+- El posible solape con la tarjeta .info ya no causa el problema
+  anterior ("mal encajada", texto lavado): .info tiene ahora
+  position:relative;z-index:1 explícito (corrección de la vuelta
+  anterior) y .hero-art se quedó en z-index:0, así que la tarjeta
+  blanca siempre pinta limpia y opaca por encima, aunque la ilustración
+  se extienda por debajo.
+- Añadido un degradado de máscara solo en el borde izquierdo
+  (mask-image, transparente → opaco en el 26%) para que no corte en
+  seco sobre el texto del H1.
+- Restaurada la regla específica de móvil (@media max-width:920px):
+  vuelve a ser el patrón de fondo a pantalla completa y baja opacidad
+  (.14) que el cliente pidió desde el principio para esa versión,
+  distinto de la ilustración recortada de escritorio.
