@@ -291,3 +291,22 @@ MEJORAS SEGÚN LAS IMÁGENES DE REFERENCIA ENVIADAS POR EL CLIENTE:
   referencia. El resto de enlaces "Ver ubicación..." del sitio (sección
   de contacto y footer) siguen siendo enlaces de texto simples, sin
   cambios, ya que la referencia solo mostraba la tarjeta del hero.
+
+AJUSTES ADICIONALES (a petición del cliente):
+- H1 en escritorio: tope máximo del clamp() reducido de 74px a 70px,
+  según lo solicitado.
+- Botón "Agenda una reunión y cuéntanos qué está frenando a tu
+  empresa" (.meet): el texto en dos líneas quedaba muy pegado a los
+  bordes del botón. Aumentado el padding vertical (18px), añadido
+  line-height:1.4 y cambiado a texto alineado a la izquierda (en vez
+  de centrado por línea) para que las dos líneas se vean equilibradas
+  junto al icono de calendario y la flecha final.
+- Fondo del hero, segunda vuelta (a petición del cliente: "coloca
+  formas, líneas, otro diseño de fondo"): sustituido el patrón de
+  anillos concéntricos anterior por uno nuevo compuesto de líneas
+  diagonales finas (.hero-deco, repeating-linear-gradient) más tres
+  formas geométricas con solo borde (círculo, cuadrado rotado y anillo
+  grande), todo en los mismos tonos de marca (blanco muy translúcido,
+  azul y cian) y con máscara para desvanecerse hacia el texto,
+  manteniendo la instrucción de no saturar. Ajustado también el tamaño
+  y posición de las formas en móvil.
