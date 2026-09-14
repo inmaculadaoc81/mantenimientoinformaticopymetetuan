@@ -124,3 +124,21 @@ BANNER DE COOKIES Y ENLACE DE PRIVACIDAD (a petición del cliente):
   el enlace estándar de la familia a
   https://kelatos.com/privacy-policy/, resaltado en azul y subrayado
   (clase .privacy-link).
+
+REVISIÓN COMPLETA DE INDICACIONES PENDIENTES (a petición del cliente):
+Repaso contra el checklist unificado completo de la familia. Ya
+estaban correctos: Cal.com con parámetros nuevos, correo de soporte
+no visible, WhatsApp con marca (PymeTech), cierre del menú móvil,
+header fijo al hacer scroll, sin etiqueta rotada tipo hero-chip, sin
+patrón de franja de insignias (familia Dyson), banner de cookies y
+enlace de privacidad (ya corregidos en la pasada anterior), sitemap.xml
+y robots.txt correctos. Se encontraron y corrigieron dos pendientes:
+- BUG REAL — la fila "Horario" no incluía "Sábados, domingos y días
+  festivos estamos cerrados" (regla estándar de toda la familia).
+  Añadido.
+- BUG REAL — el texto decorativo gigante ".art:before" ("MENOS HORAS
+  PERDIDAS", 64px) no tenía ninguna reducción de tamaño en
+  tablet/móvil, mismo patrón ya corregido en decenas de repos de la
+  familia. Añadida reducción (40px en ≤920px, 28px en ≤600px).
+- Sin Google Analytics: sigue sin proporcionarse un ID propio para
+  PymeTech (no aplica, no es un bug).
