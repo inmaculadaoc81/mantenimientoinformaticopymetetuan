@@ -40,7 +40,7 @@ header{position:sticky;top:0;z-index:9000;background:rgba(8,17,31,.92);backdrop-
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:1.4px;font-weight:700;text-transform:uppercase;color:#a9c9f5;background:#ffffff0d;border:1px solid #ffffff1f;padding:8px 14px;border-radius:999px}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none;box-shadow:0 0 0 4px #32c7d926}
 .kicker{font-size:12px;letter-spacing:1.6px;font-weight:700;text-transform:uppercase;color:#7fc9ff}
-h1{font-family:var(--font-display);font-size:clamp(52px,5.6vw,70px);line-height:1.04;letter-spacing:-1.6px;font-weight:700;margin:18px 0 26px}
+h1{font-family:var(--font-display);font-size:clamp(44px,5.6vw,62px);line-height:1.04;letter-spacing:-1.6px;font-weight:700;margin:18px 0 26px}
 .accent{color:var(--cyan)}
 .ctas{display:grid;grid-template-columns:1fr;gap:11px;margin-top:8px;max-width:520px}
 .cta{min-height:60px;border-radius:999px;display:flex;align-items:center;justify-content:center;text-align:center;padding:13px 18px;font-weight:700;font-size:14.5px;transition:filter .15s ease,background .15s ease,color .15s ease,transform .15s ease}
@@ -54,7 +54,7 @@ h1{font-family:var(--font-display);font-size:clamp(52px,5.6vw,70px);line-height:
 .meet .chev{width:18px;height:18px;flex:0 0 18px;margin:0 0 0 14px}
 
 .info{position:relative;z-index:1;background:#fff;color:var(--ink);border-radius:24px;padding:30px;box-shadow:var(--shadow-l);border-top:4px solid var(--blue)}
-.info h2{font-family:var(--font-display);font-size:22px;font-weight:700;margin:6px 0 4px}
+.info h2{font-family:var(--font-display);font-size:22px;line-height:1.25;font-weight:700;margin:6px 0 4px}
 .info .kicker{color:var(--blue)}
 .row{display:flex;align-items:flex-start;gap:13px;padding:14px 0;border-top:1px solid var(--line)}
 .row-icon{flex:none;width:34px;height:34px;border-radius:10px;background:#e6f0ff;color:var(--blue);display:grid;place-items:center;margin-top:1px}

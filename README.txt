@@ -348,3 +348,19 @@ choque con el H1):
   degradado de desvanecido) siempre queda contenido dentro del hueco
   entre el texto y la tarjeta de contacto, sin importar el ancho de
   viewport.
+
+AJUSTES ADICIONALES (a petición del cliente, aplicado a los 3
+repositorios de la familia con la misma estructura):
+- H1: tamaño reducido 8px (clamp(52-70px) → clamp(44-62px)).
+- Tarjeta de información de contacto: el h2 (antes genérico, "Servicios
+  IT para empresas") ahora muestra siempre el título exacto de la web
+  (el mismo que el <title> y el nombre de la ficha de Google Business):
+  "PymeTech | Mantenimiento Informático y Software para Empresas en
+  Madrid". Añadido line-height:1.25 a .info h2 para que el título más
+  largo envuelva mejor dentro de la tarjeta.
+- Menú (escritorio y móvil): "Reunión" → "Agendar cita" (afina la
+  redacción anterior "Agenda una cita").
+- Sección de reserva de cita (#cita): el kicker "Si quieres verlo con
+  calma" → "Asesoramiento gratuito".
+- Redacción siguiendo el criterio de Isra Bravo (directo, sin relleno,
+  orientado a beneficio) en los textos tocados en esta pasada.
