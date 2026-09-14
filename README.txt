@@ -212,3 +212,21 @@ CORRECCIÓN DEL FONDO DEL HERO (a petición del cliente, con captura de pantalla
   ahora es un efecto sutil solo al pasar el ratón por el hero
   (transform + transición, sin bucle infinito), según sugerencia del
   cliente. En móvil no aplica (no hay hover).
+
+CORRECCIÓN DEL FONDO DEL HERO (2ª vuelta, a petición del cliente — "se ve
+mal encajada, no coloques ningún efecto, solo colócala en el fondo"):
+- BUG REAL — con .hero-art en position:absolute;z-index:1 y .info sin
+  ninguna posición/z-index propios, en varios anchos de ventana la
+  ilustración se veía superpuesta sobre la mitad inferior de la tarjeta
+  blanca de contacto (.info), lavando el texto de "HORARIO", "TELÉFONO
+  DE INFORMACIÓN", etc.
+- Simplificado por completo, tal como pidió el cliente: eliminado el
+  efecto al pasar el ratón (.hero:hover .hero-art, en escritorio y
+  móvil) y la transición transform .5s asociada. La imagen ya no se
+  intenta encajar/alinear junto al contenido: ahora es una sola capa de
+  fondo a pantalla completa del hero (inset:0, background-size:cover,
+  opacity:.16), igual en escritorio y móvil, así que se ha eliminado
+  también la regla duplicada que existía solo para móvil.
+- Añadido position:relative;z-index:1 explícito a .info, como refuerzo,
+  para que la tarjeta blanca siempre pinte por encima del fondo sin
+  ambigüedad de apilamiento (antes .info no tenía position propio).
