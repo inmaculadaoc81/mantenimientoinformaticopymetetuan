@@ -142,3 +142,36 @@ y robots.txt correctos. Se encontraron y corrigieron dos pendientes:
   familia. Añadida reducción (40px en ≤920px, 28px en ≤600px).
 - Sin Google Analytics: sigue sin proporcionarse un ID propio para
   PymeTech (no aplica, no es un bug).
+
+REVISIÓN DE DISEÑO (a petición del cliente, "algo más profesional"):
+- Tipografía: añadida "Sora" (Google Fonts) para titulares (h1, h2,
+  h3, marca, botón de envío) manteniendo Inter para el cuerpo de
+  texto — antes todo usaba Inter, sin jerarquía tipográfica distinta
+  entre titular y párrafo.
+- Eyebrow del hero: sustituido el texto plano por una píldora con
+  punto de acento, patrón habitual en landing pages profesionales.
+- Tarjetas (.problem, .service, .plan): añadido efecto hover sutil
+  (elevación + sombra) para que se perciban interactivas.
+- Servicios: añadido un icono propio a cada una de las 6 tarjetas
+  (llave inglesa, código, rayo, escudo, nube, tendencia), en vez de
+  solo una etiqueta de texto — ayuda a diferenciar cada área de un
+  vistazo.
+- Bloque decorativo "Automatizar no es poner IA por poner IA": el
+  texto gigante con contorno ("MENOS HORAS PERDIDAS") se ha
+  sustituido por una tarjeta flotante con icono y mensaje concreto
+  ("Menos tareas manuales"), un tratamiento más contenido y propio de
+  diseño profesional que el texto de fondo tipo plantilla.
+- Confianza (Google/YouTube): añadido un icono a cada tarjeta y
+  degradado sutil en el fondo en vez de color plano.
+- Plan "Empresa": marcado como destacado (borde de color + etiqueta
+  "Más elegido"), patrón estándar en tablas de precios para guiar la
+  elección.
+- Pasos del proceso: números de tarjeta llevados a la tipografía de
+  titular, para que combinen con el resto de la jerarquía.
+- Formulario: estados de foco visibles en campos e inputs (accesible
+  por teclado), sombra sutil al enfocar.
+- Accesibilidad: añadido contorno de foco visible (:focus-visible) en
+  enlaces, botones y campos; respeta prefers-reduced-motion.
+- Refinados espaciados, radios de borde y sombras para que se sientan
+  consistentes en toda la página, en vez de varían de una sección a
+  otra.
