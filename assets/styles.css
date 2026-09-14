@@ -29,16 +29,14 @@ header{position:sticky;top:0;z-index:9000;background:rgba(8,17,31,.92);backdrop-
 .mobile-menu a:last-child{border-bottom:none}
 
 /* Hero */
-.hero{position:relative;overflow:hidden;padding:88px 0 92px;background:radial-gradient(circle at 82% 14%,#32c7d922,transparent 28%),linear-gradient(160deg,#08111f 0%,#0e1c31 100%);color:#fff}
+.hero{position:relative;overflow:hidden;padding:88px 0 92px;border-radius:0 0 36px 36px;background:radial-gradient(circle at 82% 14%,#32c7d922,transparent 28%),linear-gradient(160deg,#08111f 0%,#0e1c31 100%);color:#fff}
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#ffffff08 1px,transparent 1px),linear-gradient(#ffffff08 1px,transparent 1px);background-size:36px 36px;mask-image:radial-gradient(ellipse 70% 60% at 70% 20%,black 40%,transparent 90%)}
-.hero-deco{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:repeating-linear-gradient(115deg,transparent 0 58px,#ffffff0a 58px 59px,transparent 59px 116px,#32c7d91f 116px 117px);mask-image:radial-gradient(ellipse 70% 65% at 80% 30%,#000 30%,transparent 82%);-webkit-mask-image:radial-gradient(ellipse 70% 65% at 80% 30%,#000 30%,transparent 82%)}
+.hero-deco{position:absolute;top:0;bottom:0;right:-2%;width:46%;max-width:540px;z-index:0;overflow:hidden;pointer-events:none;background:radial-gradient(circle at 72% 30%,#32c7d94a,transparent 55%),radial-gradient(circle at 56% 68%,#5f6fff38,transparent 50%),repeating-linear-gradient(115deg,transparent 0 58px,#ffffff17 58px 59px,transparent 59px 116px,#32c7d94a 116px 117px);mask-image:linear-gradient(90deg,transparent,#000 24%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 24%)}
 .shape{position:absolute;border:1.5px solid #ffffff1f;pointer-events:none}
-.shape.circle{width:270px;height:270px;border-radius:50%;top:2%;right:4%;border-color:#32c7d933}
-.shape.square{width:150px;height:150px;border-radius:26px;top:48%;right:24%;transform:rotate(20deg);border-color:#ffffff1c}
-.shape.ring{width:460px;height:460px;border-radius:50%;bottom:-18%;right:-8%;border-color:#5f6fff26}
+.shape.circle{width:270px;height:270px;border-radius:50%;top:2%;right:4%;border-color:#32c7d970}
+.shape.square{width:150px;height:150px;border-radius:26px;top:48%;right:24%;transform:rotate(20deg);border-color:#ffffff40}
+.shape.ring{width:460px;height:460px;border-radius:50%;bottom:-18%;right:-8%;border-color:#5f6fff5c}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.16fr .84fr;gap:50px;align-items:start}
-.hero-edge{position:absolute;z-index:3;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
-.hero-edge svg{display:block;width:100%;height:70px}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;letter-spacing:1.4px;font-weight:700;text-transform:uppercase;color:#a9c9f5;background:#ffffff0d;border:1px solid #ffffff1f;padding:8px 14px;border-radius:999px}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none;box-shadow:0 0 0 4px #32c7d926}
 .kicker{font-size:12px;letter-spacing:1.6px;font-weight:700;text-transform:uppercase;color:#7fc9ff}
@@ -178,7 +176,7 @@ footer{background:var(--bg);color:#fff;padding:36px 0}
   .steps-grid{grid-template-columns:repeat(2,1fr)}
   .trust{grid-template-columns:1fr}
   .art{min-height:280px}
-  .hero-deco{mask-image:radial-gradient(ellipse 90% 70% at 85% 10%,#000 30%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 90% 70% at 85% 10%,#000 30%,transparent 78%)}
+  .hero-deco{width:62%;max-width:340px}
   .shape.circle{width:170px;height:170px;top:-4%;right:-6%}
   .shape.square{width:100px;height:100px;top:38%;right:10%}
   .shape.ring{width:300px;height:300px;bottom:-24%;right:-16%}
@@ -186,7 +184,6 @@ footer{background:var(--bg);color:#fff;padding:36px 0}
 @media(max-width:600px){
   .wrap{width:calc(100% - 28px)}
   h1{font-size:48px}
-  .hero-edge svg{height:44px}
   .problem-grid,.service-grid,.plan-grid,.steps-grid,.ctas,form{grid-template-columns:1fr}
   .meet,.full{grid-column:auto}
   .cal{height:760px}

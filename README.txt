@@ -326,3 +326,25 @@ captura): la onda con varios picos quedaba demasiado pronunciada.
 Sustituida por una sola curva suave (una única Q de bezier, sin
 ondulaciones), mucho más plana y sutil, tal como se veía en el trazo
 de referencia del cliente.
+
+BORDE DEL HERO: VUELTA A RECTO, SOLO ESQUINAS REDONDEADAS (a petición
+del cliente: "manténlo recto, solo redondea los bordes"):
+- Eliminado el divisor SVG de curva/onda por completo.
+- Añadido border-radius:0 0 36px 36px directamente a .hero: el borde
+  inferior vuelve a ser una línea recta en toda su longitud, solo con
+  las dos esquinas inferiores redondeadas.
+
+COLOR EN EL FONDO DEL HERO (a petición del cliente: los detalles de
+fondo colocados antes casi no se apreciaban; pidió color sin que
+choque con el H1):
+- Aumentada notablemente la opacidad de las líneas diagonales y de los
+  tres contornos (círculo/cuadrado/anillo), y añadidos dos resplandores
+  de color (cian y azul-índigo, los mismos tonos de marca que el acento
+  del H1) detrás de las líneas.
+- Para garantizar que nunca se acerque al texto del H1 en ningún ancho
+  de pantalla, .hero-deco se reestructuró como una caja propia anclada
+  al borde derecho (width:46%, max-width:540px) en vez de una máscara
+  sobre todo el ancho del hero — así su borde izquierdo (con
+  degradado de desvanecido) siempre queda contenido dentro del hueco
+  entre el texto y la tarjeta de contacto, sin importar el ancho de
+  viewport.
