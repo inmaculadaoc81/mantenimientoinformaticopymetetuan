@@ -255,3 +255,39 @@ parecía a la imagen de referencia):
   vuelve a ser el patrón de fondo a pantalla completa y baja opacidad
   (.14) que el cliente pidió desde el principio para esa versión,
   distinto de la ilustración recortada de escritorio.
+
+ENLACE DE GOOGLE MAPS (a petición del cliente):
+- Actualizado en las 4 ubicaciones donde aparecía (tarjeta de contacto
+  del hero, tarjeta "Google Business" de la sección de confianza,
+  enlace de la sección de contacto y footer): de
+  https://maps.app.goo.gl/mkCqbuex13odNwc17 a
+  https://maps.app.goo.gl/RXatcmbYFv9Z8xdPA.
+
+FONDO DEL HERO — RETIRADA LA IMAGEN, SUSTITUIDA POR UN PATRÓN (a
+petición del cliente: "ya no coloques la imagen de fondo no se ve bien.
+usa patrones u otros elementos con colores relacionados sin saturar"):
+- Eliminado por completo el div .hero-art y su imagen de fondo
+  (pymetech-fondo-isometrico-web.webp, borrada del repositorio junto
+  con su README de assets/images, ya que no queda ninguna referencia).
+- En su lugar, un patrón puramente CSS (.hero:after): anillos
+  concéntricos + resplandor radial suave, en los mismos tonos de marca
+  (azul/cian) ya usados en el resto del hero, con máscara para
+  desvanecerse en los bordes y opacidad baja para no saturar. Se
+  combina con la retícula de puntos (.hero:before) que ya existía.
+  Ajustado también en móvil para quedar proporcionado y discreto.
+
+MEJORAS SEGÚN LAS IMÁGENES DE REFERENCIA ENVIADAS POR EL CLIENTE:
+- Botón "Agenda una reunión...": añadida una flecha (chevron) al final,
+  con el texto y el icono de calendario a la izquierda y la flecha
+  empujada al extremo derecho del botón (justify-content:space-between),
+  igual que en la referencia.
+- Tarjeta de información de contacto (.info): cada fila (Zona, Horario,
+  Teléfono de información, Servicios) recibe ahora un icono propio
+  (ubicación, reloj, teléfono, engranaje) en un círculo azul claro,
+  igual que en la imagen de referencia.
+- El enlace "Ver ubicación y reseñas" dentro de esa tarjeta pasa de ser
+  un simple enlace de texto a un botón sólido de ancho completo
+  (degradado azul/índigo de marca) con icono de flecha, igual que en la
+  referencia. El resto de enlaces "Ver ubicación..." del sitio (sección
+  de contacto y footer) siguen siendo enlaces de texto simples, sin
+  cambios, ya que la referencia solo mostraba la tarjeta del hero.
