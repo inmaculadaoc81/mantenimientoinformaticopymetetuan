@@ -320,3 +320,9 @@ hero está recto, redondea o crea otra forma de terminar"):
   curva de la zona oscura del hero a la zona clara, sin afectar el
   layout del contenido (absolute, no ocupa espacio en el flujo). Altura
   reducida en móvil (≤600px) para mantener la proporción.
+
+AJUSTE DE LA CURVA DEL HERO (a petición del cliente, con boceto sobre
+captura): la onda con varios picos quedaba demasiado pronunciada.
+Sustituida por una sola curva suave (una única Q de bezier, sin
+ondulaciones), mucho más plana y sutil, tal como se veía en el trazo
+de referencia del cliente.
