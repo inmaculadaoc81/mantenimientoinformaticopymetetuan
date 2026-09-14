@@ -197,3 +197,18 @@ IMAGEN DE FONDO DEL HERO (a petición del cliente, con imagen de referencia):
 - Rendimiento: una sola imagen de 47.7 KB, sin JavaScript añadido,
   animación limitada a transform (compositada por GPU, no afecta al
   layout/paint), desactivada por completo en móvil.
+
+CORRECCIÓN DEL FONDO DEL HERO (a petición del cliente, con captura de pantalla):
+- BUG REAL — la ilustración se posicionaba en absoluto relativa a
+  .hero (ancho completo del viewport), pero sus medidas eran
+  porcentajes pensados para el ancho del contenido (.wrap, 1180px
+  máx). En pantallas anchas esto desplazaba la imagen casi fuera de
+  la vista, dejando solo una esquina visible — justo lo que se veía
+  en la captura. Corregido: la ilustración ahora es hija de
+  .hero-grid (contenida en .wrap), así sus porcentajes se calculan
+  sobre el ancho del contenido, no de toda la pantalla, y queda
+  colocada de forma consistente sin importar el ancho de ventana.
+- Cambiada la animación: en vez de una flotación continua en bucle,
+  ahora es un efecto sutil solo al pasar el ratón por el hero
+  (transform + transición, sin bucle infinito), según sugerencia del
+  cliente. En móvil no aplica (no hay hover).
